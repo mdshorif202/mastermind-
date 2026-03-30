@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mursaline Hossain | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  font-family:'Inter',sans-serif;
+  background:#0b0b0b;
+  color:#e5e5e5;
+}
+
+/* NAV */
+nav{
+  display:flex;
+  justify-content:space-between;
+  padding:20px 10%;
+  position:fixed;
+  width:100%;
+  background:rgba(0,0,0,0.8);
+  backdrop-filter:blur(10px);
+}
+
+nav h1{
+  font-family:'Playfair Display',serif;
+  color:#d4af37;
+}
+
+nav a{
+  margin-left:20px;
+  text-decoration:none;
+  color:#aaa;
+}
+
+nav a:hover{color:#d4af37;}
+
+/* HERO */
+.hero{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+
+.hero h2{
+  font-size:2.8rem;
+  font-family:'Playfair Display',serif;
+}
+
+.hero p{
+  margin-top:10px;
+  color:#aaa;
+}
+
+/* SECTION */
+section{
+  padding:80px 10%;
+}
+
+h2{
+  color:#d4af37;
+  margin-bottom:20px;
+  font-family:'Playfair Display',serif;
+}
+
+/* CARD */
+.card{
+  background:#111;
+  padding:20px;
+  border-radius:10px;
+  margin-bottom:15px;
+  border:1px solid #222;
+}
+
+.card:hover{
+  border-color:#d4af37;
+}
+
+/* SKILLS */
+.skills span{
+  display:inline-block;
+  margin:5px;
+  padding:8px 12px;
+  border:1px solid #d4af37;
+  border-radius:20px;
+  color:#d4af37;
+  font-size:13px;
+}
+
+/* FORM */
+form input, form textarea{
+  width:100%;
+  padding:12px;
+  margin:10px 0;
+  background:#111;
+  border:1px solid #333;
+  color:#fff;
+  border-radius:5px;
+}
+
+form button{
+  background:#d4af37;
+  border:none;
+  padding:12px;
+  width:100%;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+form button:hover{
+  opacity:0.8;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+  color:#666;
+}
+
+@media(max-width:768px){
+  .hero h2{font-size:2rem;}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h1>Mursaline</h1>
+  <div>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div>
+    <h2>Mursaline Hossain</h2>
+    <p>SSC 2026 • Arts Student • Future Digital Creator</p>
+  </div>
+</div>
+
+<section id="about">
+  <h2>About</h2>
+  <p style="color:#aaa;max-width:600px;">
+    I am a Class 10 student (SSC Batch 2026, Arts) focused on building modern digital skills. 
+    I am learning web development, content creation, and online business systems to create real income streams early.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>Basic Python</span>
+    <span>Content Creation</span>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="card">
+    <h3>Portfolio Website</h3>
+    <p style="color:#aaa;">Modern personal portfolio with clean UI.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+
+  <!-- FORM (Formspree Integration) -->
+  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    
+    <input type="text" name="name" placeholder="Your Name" required>
+    
+    <input type="email" name="email" placeholder="Your Email" required>
+    
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    
+    <button type="submit">Send Message</button>
+  </form>
+
+  <p style="margin-top:15px;color:#aaa;">
+    Direct Email: shorif01677228@gmail.com
+  </p>
+
+</section>
+
+<footer>
+  © 2026 Mursaline Hossain — Premium Portfolio
+</footer>
+
+</body>
+</html>
